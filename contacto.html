@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contacto - Barbeía ALURA.</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="logo.png" alt="logo de Entretejidos Crochet de Naomi" ></h1>
+                <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pruductos.html">Producto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                </nav>
+
+            </div>
+            
+            
+        </header>
+        <main>
+            <form >
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="mail">E-Mail</label>
+                <input type="email" id="mail" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(xx) xxxx xxxx">
+                                
+                <label for="mensaje">Describe brevemente lo que deseas que te coticemos</label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padron" required placeholder="Modelo y medidas"></textarea>
+                
+                <fieldset>
+                    <legend>¿Cómo le gustaría que le contactemos?</legend>
+                    <label for="radio-email"><input type="radio" name ="contacto" value="email" id="radio-email">Email</label>                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                    
+
+                </fieldset>
+                            
+
+                <label class="check-box"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería ALURA?</label>
+                
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
+           
+
+        </main>
+        <footer>
+            <img src="logo.png" alt="Logo de Entretejidos Crochet de Naomi">
+            <p class="copyrigth">&copy Copyrigth Entretejidos Crochet de Naomi</p>
+        </footer>
+        
+    </body>
+
+</html>
